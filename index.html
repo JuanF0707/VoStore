@@ -4,28 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vo Store</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 <body>
-    <header class="encabezado">
-        <div class="logo">
-            <img src="img/VO STORE LOGO  SIN FONDO.png" alt="">
-        </div>
-        <div class="derecha">
-            <p>En Vo Store celebramos la feminidad 
-                y el estilo</p>
-            <p>Moda que vibra con vos</p>
+   <header class="header-custom text-white">
+        <div class="container-fluid h-100">
+            <div class="row align-items-center">
+
+                <!-- LOGO -->
+                <div class="col-5 d-flex justify-content-end">
+                    <img src="img/VO STORE LOGO  SIN FONDO.png" alt="" class="img-fluid logo-header">
+                </div>
+
+                 <!-- TEXTOS -->
+                <div class="col-7 d-flex flex-column justify-content-center align-items-start textos-header">
+                    <span class="texto-2">En VO STORE celebramos la feminidad y el estilo.</span>
+                    <span class="texto-1">! Moda que vibra con vos ¡</span>
+                </div>
+            </div>
         </div>
     </header>
-    <nav class="navegador">
-        <ul class="nav">
+
+    <section id="slider-vo">
+        <div id="carouselVO" class="carousel slide" data-bs-ride="carousel">
+    
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/ISOTIPO BLANCO.png" class="d-block w-100" alt="slider1">
+                    <div class="carousel-caption d-flex flex-column justify-content-end pb-4">
+                        <h5>Nueva Colección</h5>
+                        <p>Moda que vibra contigo</p>
+                    </div>
+                 </div>
+                <div class="carousel-item">
+                    <img src="img/ISOTIPO.png" class="d-block w-100" alt="slider2">
+                    <div class="carousel-caption d-flex flex-column justify-content-end pb-4">
+                        <h5>Estilo sin límites</h5>
+                        <p>Descubre lo nuevo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/VO STORE LOGO PERFIL.jpg" class="d-block w-100" alt="slider3">
+                    <div class="carousel-caption d-flex flex-column justify-content-end pb-4">
+                        <h5>Tu esencia, tu moda</h5>
+                         <p>Colecciones exclusivas</p>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    </section>
+
+    <ul class="nav">
             <li class="nav-item">
                 <a class="nav1" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
-                <a class="nav1" href="">Productos</a>
+            <li class="nav-item dropdown">
+                <a class="nav1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Productos
+                </a>
+                 <ul class="dropdown-menu bg-black">
+                    <li><a class="dropdown-item text-white" href="#">Ropa</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Accesorios</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Promociones</a></li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav1" href="#">CRUD</a>
@@ -42,7 +88,7 @@
              <li class="nav-item">
                 <a class="nav1 " href="#">Integrantes</a>
             </li>
-        </ul>
-    </nav>
+    </ul>
+    
 </body>
 </html>
