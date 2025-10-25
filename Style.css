@@ -15,7 +15,6 @@ body{
   top: 0;
   width: 100%;
   height: 300px;
-  z-index: 1000;
   display: flex;
   align-items: center;
 }
@@ -41,8 +40,9 @@ body{
     text-align: center;
     padding-bottom: 10px;
     font-size: 25px;
-    font-family: "Libre Baskerville";
-    
+    font-family: "Lora";
+    /* position: fixed;
+    top: 0; */
 }
 
 .nav1{
@@ -88,6 +88,67 @@ form {
     padding: 12px 24px;
     gap: 10px;
     width: 100%;
+}
+
+
+.cuadro-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cuadro-link:hover .texto {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.textoinferior{
+  padding: 20px 10px;
+  font-size: 1.5625rem;
+  font-family: "Lora";
+}
+
+.texto-corto{
+  background-color: rgba(228, 167, 157,0.5);
+  border-radius: 15px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lora";
+}
+
+.textos-footer{
+  gap: 5px; 
+  font-family: "Lora";
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.icons a{
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+
+.form-control1{
+  margin-bottom: 5px;
+  width: 400px;
+  border-radius: 7px;
+  height: 40px;
+}
+
+.btn{
+  background-color: #e4a79d;
+  border-color: #e4a79d;
+  margin-top: 10px;
 }
 
 
