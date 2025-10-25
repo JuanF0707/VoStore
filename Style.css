@@ -109,6 +109,7 @@ body{
   border-radius: 8px;
 }
 
+
 #cuadros .cuadro {
   aspect-ratio: 1 / 1;
   max-width: 260px;
@@ -145,10 +146,20 @@ body{
   color: inherit;
   display: block;
 }
+.cuadro:hover{
+  background-color: #000000;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
 
 .cuadro-link:hover .texto {
   text-decoration: underline;
   cursor: pointer;
+  background-color: #e4a79d;
+  color: #000;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .textoinferior{
@@ -198,6 +209,11 @@ footer{
   background-color: #e4a79d;
   border-color: #e4a79d;
   margin-top: 10px;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #000;
 }
 
 
