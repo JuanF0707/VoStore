@@ -3,15 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
 <body>
-<<<<<<< HEAD
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam expedita tempore nobis odit veritatis quae dolor eum ducimus quo sint minus recusandae doloribus, reiciendis doloremque nesciunt soluta non accusantium!</p>
-=======
-    <h1>Hola a todos</h1>
-    <h2>Hola estoy probando el git</h2>
-    
->>>>>>> 5e50152e8d22d1b7464668b8b1a01a6b83b5ea5f
+    <header class="encabezado">
+        <div class="logo">
+            <img src="img/VO STORE LOGO  SIN FONDO.png" alt="">
+        </div>
+        <div class="derecha">
+            <p>En Vo Store celebramos la feminidad 
+                y el estilo</p>
+            <p>Moda que vibra con vos</p>
+        </div>
+    </header>
+    <nav class="navegador">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav1" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav1" href="">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav1" href="formulario.html">CRUD</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Modelo BD</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Logica de Programacion</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Contactos</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Integrantes</a>
+            </li>
+        </ul>
+    </nav>
+    <main><h1>Registro de producto</h1></main>
+    <!-- Formulario -->
+     <form>
+        <label for="id-product">ID Producto</label>
+        <input type="number" id="id-product">
+        <br>
+        <br>
+        <label for="id-category">ID Categoría</label>
+        <input type="number" id="id-category">
+        <br>
+        <br>
+        <label for="id-proveedor">ID Proveedor</label>
+        <input type="number" id="id-proveedor">
+        <br>
+        <br>
+        <label for="lnom">Nombre del producto:</label>
+        <input type="text" name="Nombre" id="lnom" placeholder="Escriba el nombre del producto">
+        <br>
+        <br>
+        <label for="ldescripcion">Descripción</label>
+        <input type="text" name="descripcion" id="ldescripcion" placeholder="Descripción del producto">
+        <br>
+        <br>
+        <!-- Escoger la talla -->
+        <fieldset>
+            <legend>Escoja la talla</legend>
+            <input type="radio" name="talla" id="t-xs">
+            <label for="t-xs">XS</label>
+            <br>
+            <input type="radio" name="talla" id="t-s">
+            <label for="t-s">S</label>
+            <br>
+            <input type="radio" name="talla" id="t-m">
+            <label for="t-m">M</label>
+            <br>
+            <input type="radio" name="talla" id="t-l">
+            <label for="t-l">L</label>
+            <br>
+            <input type="radio" name="talla" id="t-XL">
+            <label for="t-KL">XL</label>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <label for="precio_compra">Precio Compra:</label>
+        <input type="number" id="precio_compra" name="precio_compra" step="0.01">
+        <br>
+        <br>
+         <label for="color">Color:</label>
+         <input type="text" id="color" name="color" placeholder="Escriba el color aquí">
+         <br>
+         <br>
+         <label for="id-stock">Stock</label>
+        <input type="number" id="id-stock">
+        <br>
+        <br>
+        <!--Botones del formulario-->
+        <div class="botones">
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Reiniciar">
+        </div>
+     </form>
 </body>
 </html>
