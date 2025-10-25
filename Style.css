@@ -34,13 +34,13 @@ body{
 .nav{
     text-decoration: none;
     background-color: black;
-    gap: 70px;
+    display: flex;
+    gap: 100px;
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
     font-size: 25px;
     font-family: "Lora";
-    padding: 20PX;
     /* position: fixed;
     top: 0; */
 }
@@ -48,6 +48,7 @@ body{
 .nav1{
     text-decoration: none;
     color: #f1f1f1;
+    
 }
 .nav1:hover{
     background-color: #e4a79d;
@@ -56,89 +57,39 @@ body{
     border-radius: 15px;
 }
 
-.dropdown-menu {
-  background-color: black;
-  
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(1, 7, 12);
+    font-family: "Libre Baskerville";
+    font-size: 30px;
+    background-color: black;
+    color: #e4a79d;
+    padding: 20px;
 }
 
-.dropdown-item:hover {
-  background-color: #e4a79d;
-  color: black !important;
-  border-radius: 10px;
+input{
+    border-radius: 5px;
+}
+form {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 40px;
+    border-radius: 17px;
+    background: linear-gradient(to bottom, #e888a0, #6f2c50);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+.botones{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 12px 24px;
+    gap: 10px;
+    width: 100%;
 }
 
-#slider-vo{
-  background-color: #000;
-}
-
-#slider-vo img {
-  height: 40vh;
-  object-fit: cover;
-}
-
-#slider-vo .carousel-caption {
-  background: rgba(0,0,0,0.45);
-  border-radius: 6px;
-}
-
-#slider-vo h5, 
-#slider-vo p {
-  font-family: "Lora";
-}
-
-.texto-descripcion {
-  max-width: 80rem; 
-  margin: 40px auto; 
-  text-align: center; 
-  line-height: 1.6; 
-  font-size: 25px;
-  color: #000;
-  font-family: "Lora";
-}
-
-.cuadro {
-  aspect-ratio: 1 / 1;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-#cuadros .cuadro {
-  aspect-ratio: 1 / 1;
-  max-width: 260px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-#cuadros .cuadro {
-  aspect-ratio: 1 / 1;         
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-}
-
-#cuadros .cuadro img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;            
-}
-
-#cuadros .cuadro .texto {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
 
 .cuadro-link {
   text-decoration: none;
