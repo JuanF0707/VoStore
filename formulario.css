@@ -119,3 +119,108 @@ select:focus {
   font-size: 1.5625rem;
   font-family: "Lora";
 }
+
+/* ======== DISEÑO RESPONSIVE ======== */
+
+/* Tablets (pantallas menores a 992px) */
+@media (max-width: 992px) {
+  .contenedor-formulario {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .logo {
+    width: 150px;
+    top: 10px;
+    right: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+
+  input, textarea, select {
+    font-size: 14px;
+  }
+}
+
+/* Celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .contenedor-formulario {
+    width: 90%;
+    padding: 30px 25px;
+    margin: 30px auto;
+  }
+
+  .logo {
+    position: static;
+    display: block;
+    margin: 0 auto 20px;
+    width: 130px;
+    opacity: 0.95;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  textarea,
+  select {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botones input[type="submit"],
+  .botones input[type="reset"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .textoinferior {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Celulares pequeños (pantallas menores a 480px) */
+@media (max-width: 480px) {
+  .contenedor-formulario {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .botones input[type="submit"],
+  .botones input[type="reset"] {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+
+  .textoinferior {
+    font-size: 0.9rem;
+  }
+}
+
