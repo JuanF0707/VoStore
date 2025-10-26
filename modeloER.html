@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="modeloER" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="modeloER.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    </head>
+<body>
+   <header class="header-custom text-white">
+        <div class="container-fluid h-100">
+            <div class="row align-items-center">
+
+                <!-- LOGO -->
+                <div class="col-5 d-flex justify-content-end">
+                    <img src="img/VO STORE LOGO  SIN FONDO.png" alt="" class="img-fluid logo-header">
+                </div>
+
+                 <!-- TEXTOS -->
+                <div class="col-7 d-flex flex-column justify-content-center align-items-start textos-header">
+                    <span class="texto-2">En VO STORE celebramos la feminidad y el estilo.</span>
+                    <span class="texto-1">! Moda que vibra con vos ¡</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- BANNER -->
+    <section id="slider-vo">
+        <div id="carouselVO" class="carousel slide" data-bs-ride="carousel">
+    
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-4">
+                            <img src="img/MOD2.jpg" class="d-block w-100" alt="slider1">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/MOD1.jpg" class="d-block w-100" alt="slider2">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/MOD3.jpg" class="d-block w-100" alt="slider3">
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-flex flex-column justify-content-end pb-4"> 
+                        <h5>Nueva Colección</h5>
+                        <p>Moda que vibra contigo</p> 
+                     </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/dep2.jpg" class="d-block w-100" alt="slider1">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/dep3.jpg" class="d-block w-100" alt="slider2">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/DEP4.jpg" class="d-block w-100" alt="slider3">
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-flex flex-column justify-content-end pb-4">
+                        <h5>Estilo sin límites</h5>
+                        <p>Descubre lo nuevo</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/vest1.jpg" class="d-block w-100" alt="slider1">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/vest2.jpg" class="d-block w-100" alt="slider2">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/VEST3.jpg" class="d-block w-100" alt="slider3">
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-flex flex-column justify-content-end pb-4">
+                        <h5>Tu esencia, tu moda</h5>
+                         <p>Colecciones exclusivas</p>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    </section>
+   <!-- BARRA DE NAVEGACION -->
+    <ul class="nav">
+            <li class="nav-item">
+                <a class="nav1" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Productos
+                </a>
+                 <ul class="dropdown-menu bg-black">
+                    <li><a class="dropdown-item text-white" href="#">Ropa</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Accesorios</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Promociones</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav1" href="#">CRUD</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Modelo BD</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Logica de Programacion</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Contactos</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav1 " href="#">Integrantes</a>
+            </li>
+    </ul>
+
+
+    <!-- Modelo Entidad-Relación -->
+    <hr>
+    <h2 class="TituloModelo">Modelo Entidad-Relación</h2>
+    <img class="modeloER" src="img/modeloER.png" alt="">
+
+<hr>
+
+<!-- Script Base De Datos -->
+            <h2 class="TituloModelo mb-4">Script de la Base De Datos (SQL)</h2>
+<pre class="bg-dark-code p-4 border rounded shadow-sm">                
+
+<code>                 
+create database db_PROYECTO_INTEGRADOR;
+
+CREATE TABLE CUSTOMERS (
+ id_customer VARCHAR(20) PRIMARY KEY,
+ [name] VARCHAR(100) NOT NULL,
+ email VARCHAR(100) UNIQUE NOT NULL,
+ phone VARCHAR(20),
+ [address] VARCHAR(150),
+ registration_date DATE DEFAULT GETDATE()
+);
+
+
+CREATE TABLE EMPLOYEES (
+    document_number INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    position VARCHAR(50),
+    salary DECIMAL(10,2),
+    phone VARCHAR(20),
+    hire_date DATE DEFAULT GETDATE()
+);
+
+
+CREATE TABLE SUPPLIERS (
+    supplier_id INT PRIMARY KEY IDENTITY(1,1),
+    [name] VARCHAR(100) UNIQUE NOT NULL,
+    company VARCHAR(100),
+    phone VARCHAR(20),
+    email VARCHAR(100),
+    [address] VARCHAR(150)
+    );
+
+   
+create table CATEGORIES
+(
+id_category INT PRIMARY KEY IDENTITY(1,1), 
+[name] VARCHAR (70) NOT NULL UNIQUE,
+[description] VARCHAR (100)
+);
+
+create table PRODUCTS (
+id_product int PRIMARY KEY IDENTITY(1,1),
+id_category int,
+id_proveedor int,
+nombre varchar (70) NOT NULL,
+[description] varchar (100),
+price decimal, 
+talla varchar (20) NOT NULL,
+color varchar (20),
+stock int,
+imagen_url varchar (200),
+precio_compra decimal
+CONSTRAINT FK_PRODUCTS_CATEGORIES FOREIGN KEY (id_category) REFERENCES CATEGORIES (id_category),
+CONSTRAINT FK_PRODUCTS_SUPPLIERS FOREIGN KEY (id_proveedor) REFERENCES SUPPLIERS (supplier_id)
+);
+
+CREATE TABLE SALES (
+    
+    id_sale INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    id_customer VARCHAR(20) NOT NULL,
+    id_employee INT NOT NULL,
+    sales_number NVARCHAR(50) NOT NULL,
+    sale_date DATE NOT NULL,
+    subtotal DECIMAL(10,2) NOT NULL,
+    discount DECIMAL(5,2) DEFAULT 0.00,
+    total DECIMAL(10,2) NOT NULL,
+    payment_method NVARCHAR(50) NOT NULL,
+    
+    
+    CONSTRAINT FK_SALES_CUSTOMERS FOREIGN KEY (id_customer) 
+        REFERENCES CUSTOMERS(id_customer),
+    
+    CONSTRAINT FK_SALES_EMPLOYEE FOREIGN KEY (id_employee) 
+        REFERENCES EMPLOYEES(document_number),
+  )
+
+CREATE TABLE SALES_DETAIL (
+  
+    id_detail INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    id_sale INT NOT NULL,
+    id_product INT NOT NULL,
+    amount INT NOT NULL,
+    unit_price DECIMAL(10,2) NOT NULL,
+    subtotal DECIMAL(10,2) NOT NULL,
+    
+    CONSTRAINT FK_SALES_DETAIL_SALES FOREIGN KEY (id_sale) REFERENCES SALES(id_sale),
+    CONSTRAINT FK_SALES_DETAIL_PRODUCTS FOREIGN KEY (id_product)  REFERENCES PRODUCTS (id_product)
+ );
+
+CREATE TABLE INVENTORIES (
+    id_inventory INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    id_product INT NOT NULL,
+    id_employee INT NOT NULL,
+    amount INT NOT NULL,
+    inventory_date DATE NOT NULL,
+    
+    
+    CONSTRAINT FK_INVENTORIES_PRODUCTS FOREIGN KEY (id_product) REFERENCES PRODUCTS(id_product),
+    
+    CONSTRAINT FK_INVENTORIES_EMPLOYEES FOREIGN KEY (id_employee) REFERENCES EMPLOYEES (document_number)
+        );
+
+
+
+USE db_PROYECTO_INTEGRADOR;
+
+INSERT INTO CUSTOMERS (id_customer, [name], email, phone, [address])
+VALUES
+('1025467876', 'Ana Torres', 'ana.torres@email.com', '3001112233', 'Cra 10 #23-45'),
+('1097645378', 'Luis Gómez', 'luis.gomez@email.com', '3102223344', 'Cll 45 #67-12'),
+('1065478987', 'María López', 'maria.lopez@email.com', '3203334455', 'Av 80 #12-34'),
+('1025674567', 'Carlos Ruiz', 'carlos.ruiz@email.com', '3014445566', 'Cra 50 #45-90'),
+('1026789765', 'Laura Restrepo', 'laura.restrepo@email.com', '3025556677', 'Cll 30 #10-25'),
+('1027678765', 'Andrés Pérez', 'andres.perez@email.com', '3156667788', 'Cra 12 #54-76'),
+('1026543678', 'Valentina Hoyos', 'valentina.hoyos@email.com', '3167778899', 'Av 33 #44-55'),
+('1028765776', 'Felipe Mendoza', 'felipe.mendoza@email.com', '3178889900', 'Cll 67 #89-23'),
+('1876789875', 'Sofía Rojas', 'sofia.rojas@email.com', '3189990011', 'Cra 15 #23-60'),
+('1207678767', 'Julián Castro', 'julian.castro@email.com', '3190001122', 'Av 70 #45-67');
+
+INSERT INTO EMPLOYEES (document_number, first_name, last_name, position, salary, phone)
+VALUES
+(1098765678, 'Pedro', 'Martínez', 'Vendedor', 2200000, '3001234567'),
+(1026787678, 'Marta', 'Calle', 'Cajera', 1800000, '3012345678'),
+(1098763526, 'Jorge', 'Restrepo', 'Supervisor', 3200000, '3023456789'),
+(1087876545, 'Lucía', 'García', 'Vendedor', 2100000, '3034567890'),
+(1087652765, 'Andrés', 'Suárez', 'Cajero', 1900000, '3045678901'),
+(1098765677, 'Claudia', 'Mejía', 'Auxiliar', 1700000, '3056789012'),
+(1039387636, 'Camilo', 'Ramírez', 'Supervisor', 3300000, '3067890123'),
+(1065676567, 'Paola', 'Moreno', 'Vendedor', 2000000, '3078901234'),
+(1656789765, 'David', 'Zapata', 'Auxiliar', 1600000, '3089012345'),
+(1765677987, 'Carolina', 'López', 'Cajera', 1850000, '3090123456');
+
+INSERT INTO SUPPLIERS ([name], company, phone, email, [address])
+VALUES
+('Proveedor 1','Textiles SA','3201111111','proveedor1@mail.com','Cra 1 #10-20'),
+('Proveedor 2','Zapatos Ltda','3202222222','proveedor2@mail.com','Cll 2 #20-30'),
+('Proveedor 3','Ropa Juvenil','3203333333','proveedor3@mail.com','Cra 3 #30-40'),
+('Proveedor 4','Deportes SA','3204444444','proveedor4@mail.com','Cll 4 #40-50'),
+('Proveedor 5','Accesorios Ltda','3205555555','proveedor5@mail.com','Cra 5 #50-60'),
+('Proveedor 6','Moda SA','3206666666','proveedor6@mail.com','Cll 6 #60-70'),
+('Proveedor 7','Calzado Express','3207777777','proveedor7@mail.com','Cra 7 #70-80'),
+('Proveedor 8','Outlet Store','3208888888','proveedor8@mail.com','Cll 8 #80-90'),
+('Proveedor 9','Ropa Casual','3209999999','proveedor9@mail.com','Cra 9 #90-100'),
+('Proveedor 10','Estilo Urbano','3210000000','proveedor10@mail.com','Cll 10 #100-110');
+
+INSERT INTO CATEGORIES ([name], [description])
+VALUES
+('Camisas','Ropa de torso casual'),
+('Pantalones','Ropa de pierna casual'),
+('Zapatos','Calzado formal e informal'),
+('Accesorios','Complementos de vestir'),
+('Deportes','Ropa y accesorios deportivos'),
+('Chaquetas','Ropa de abrigo'),
+('Vestidos','Prendas de ocasión'),
+('Shorts','Ropa casual corta'),
+('Ropa Interior','Prendas íntimas'),
+('Sombreros','Accesorios para la cabeza');
+
+INSERT INTO PRODUCTS (id_category, id_proveedor, nombre, [description], price, talla, color, stock, imagen_url, precio_compra)
+VALUES
+(1,1,'Camisa Polo','Camisa manga corta casual',75000,'M','Azul',50,'img/camisa1.jpg',40000),
+(1,2,'Camisa Formal','Camisa manga larga blanca',120000,'L','Blanco',30,'img/camisa2.jpg',70000),
+(2,3,'Jeans Azul','Pantalón denim clásico',95000,'32','Azul',40,'img/pantalon1.jpg',50000),
+(2,4,'Pantalón Formal','Pantalón de vestir negro',150000,'34','Negro',20,'img/pantalon2.jpg',90000),
+(3,5,'Zapatillas Deportivas','Calzado running',200000,'42','Gris',25,'img/zapatos1.jpg',120000),
+(3,6,'Zapatos de Cuero','Calzado formal',300000,'41','Café',15,'img/zapatos2.jpg',180000),
+(4,7,'Gorra Adidas','Accesorio deportivo',60000,'Única','Negra',60,'img/gorra1.jpg',30000),
+(5,8,'Sudadera Nike','Conjunto deportivo',180000,'M','Rojo',20,'img/sudadera1.jpg',100000),
+(6,9,'Chaqueta de Jean','Casual azul',250000,'L','Azul',10,'img/chaqueta1.jpg',140000),
+(7,10,'Vestido Elegante','Vestido de noche negro',400000,'S','Negro',8,'img/vestido1.jpg',250000);
+
+INSERT INTO SALES (id_customer, id_employee, sales_number, sale_date, subtotal, discount, total, payment_method)
+VALUES
+('1025467876',1098765678,'S0001','2025-09-01',150000,0.00,150000,'Efectivo'),
+('1097645378',1098765678,'S0002','2025-09-02',200000,10.00,180000,'Tarjeta'),
+('1065478987',1098765678,'S0003','2025-09-03',300000,5.00,285000,'Nequi'),
+('1025674567',1098763526,'S0004','2025-09-04',500000,0.00,500000,'Tarjeta'),
+('1026789765',1026787678,'S0005','2025-09-05',75000,0.00,75000,'Efectivo'),
+('1027678765',1098765677,'S0006','2025-09-06',400000,20.00,320000,'Transferencia'),
+('1026543678',1065676567,'S0007','2025-09-07',120000,0.00,120000,'Tarjeta'),
+('1028765776',1656789765,'S0008','2025-09-08',180000,10.00,162000,'Efectivo'),
+('1876789875',1656789765,'S0009','2025-09-09',250000,0.00,250000,'Tarjeta'),
+('1207678767',1765677987,'S0010','2025-09-10',600000,15.00,510000,'Nequi');
+
+INSERT INTO SALES_DETAIL (id_sale, id_product, amount, unit_price, subtotal)
+VALUES
+(1,1,2,75000,150000),
+(2,3,2,95000,190000),
+(2,7,1,60000,60000),
+(3,5,1,200000,200000),
+(3,4,1,150000,150000),
+(4,6,2,300000,600000),
+(5,1,1,75000,75000),
+(6,8,2,180000,360000),
+(7,2,1,120000,120000),
+(8,9,1,250000,250000);
+
+INSERT INTO INVENTORIES (id_product, id_employee, amount, inventory_date)
+VALUES
+(1,1098765678,50,'2025-08-01'),
+(2,1098765678,30,'2025-08-02'),
+(3,1098765678,40,'2025-08-03'),
+(4,1026787678,20,'2025-08-04'),
+(5,1026787678,25,'2025-08-05'),
+(6,1087876545,15,'2025-08-06'),
+(7,1087876545,60,'2025-08-07'),
+(8,1039387636,20,'2025-08-08'),
+(9,1039387636,10,'2025-08-09'),
+(10,1765677987,8,'2025-08-10');
+</code>
+</pre>
+
+
+
+    
+
+
+    
+
+
+
+
+</body>
+</html>

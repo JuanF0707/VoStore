@@ -139,3 +139,28 @@ body{
   font-size: 1.1rem;
 }
 
+/* Estilos Chipi Chipi */
+
+body {
+  /* background-color: #d8a38d; */
+  background-color: black;
+}
+.TituloModelo{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 15px;
+  margin: 30px;
+}
+.modeloER{
+  max-width: 95%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  /* border: 2px solid;
+  box-shadow: 2px 0px 11px 4px;  */
+}
+
+code, pre {
+  color: white;
+}
