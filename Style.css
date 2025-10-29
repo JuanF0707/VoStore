@@ -5,10 +5,16 @@
     padding: 0;
     margin: 0;
 }
+html{
+  overflow-x: hidden;
+}
 body{
-    background-color: #f1f1f1;
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
 }
 
+/* ========== HEADER ========== */
 .header-custom {
   background: black;
   position: static;
@@ -28,9 +34,9 @@ body{
   font-family: "Lora";
   text-align: center;
   font-size: 30px;
-
 }
 
+/* ========== NAVEGACIÓN ========== */
 .nav{
     text-decoration: none;
     background-color: black;
@@ -40,9 +46,7 @@ body{
     padding-bottom: 10px;
     font-size: 25px;
     font-family: "Lora";
-    padding: 20PX;
-    /* position: fixed;
-    top: 0; */
+    padding: 20px;
 }
 
 .nav1{
@@ -58,7 +62,6 @@ body{
 
 .dropdown-menu {
   background-color: black;
-  
 }
 
 .dropdown-item:hover {
@@ -72,11 +75,13 @@ body{
   margin-top: 0;
 }
 
+/* ========== SLIDER ========== */
 #slider-vo{
   background-color: #000;
 }
 
 #slider-vo img {
+  width: 100%;
   height: 40vh;
   object-fit: cover;
 }
@@ -91,6 +96,7 @@ body{
   font-family: "Lora";
 }
 
+/* ========== TEXTO DESCRIPCIÓN ========== */
 .texto-descripcion {
   max-width: 80rem; 
   margin: 40px auto; 
@@ -99,8 +105,10 @@ body{
   font-size: 25px;
   color: #000;
   font-family: "Lora";
+  padding: 0 20px;
 }
 
+/* ========== CUADROS DE PRODUCTOS ========== */
 .cuadro {
   aspect-ratio: 1 / 1;
   position: relative;
@@ -108,7 +116,6 @@ body{
   border: 1px solid #ccc;
   border-radius: 8px;
 }
-
 
 #cuadros .cuadro {
   aspect-ratio: 1 / 1;
@@ -146,11 +153,12 @@ body{
   color: inherit;
   display: block;
 }
+
 .cuadro:hover{
   background-color: #000000;
-    color: black;
-    padding: 10px;
-    border-radius: 15px;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .cuadro-link:hover .texto {
@@ -162,6 +170,7 @@ body{
   border-radius: 15px;
 }
 
+/* ========== TEXTO INFERIOR ========== */
 .textoinferior{
   padding: 20px 10px;
   font-size: 1.5625rem;
@@ -171,12 +180,14 @@ body{
 .texto-corto{
   background-color: rgba(228, 167, 157,0.5);
   border-radius: 15px;
+  padding: 10px;
 }
 
+/* ========== FOOTER ========== */
 footer{
     background-color: #000;
     color: #fff;
-    padding: 30px ;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,19 +199,19 @@ footer{
   font-family: "Lora";
   text-align: center;
   font-size: 30px;
-
 }
 
 .icons a{
   text-decoration: none;
   color: inherit;
-  
+  margin: 0 10px;
+  font-size: 2rem;
 }
-
 
 .form-control1{
   margin-bottom: 5px;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   border-radius: 7px;
   height: 40px;
 }
@@ -216,9 +227,9 @@ footer{
   color: #000;
 }
 
+/* ========== CARDS ========== */
 .card img {
   object-fit: cover;
-  
 }
 
 .card-body {
@@ -240,17 +251,300 @@ footer{
   width: 100%;         
 }
 
+/* ========================================== */
+/* ========== MEDIA QUERIES RESPONSIVE ===== */
+/* ========================================== */
 
+/* Tablets y pantallas medianas (hasta 992px) */
+@media (max-width: 992px) {
+  .header-custom {
+    height: 250px;
+  }
+  
+  .logo-header {
+    max-height: 250px;
+  }
+  
+  .textos-header {
+    font-size: 24px;
+  }
+  
+  .nav {
+    gap: 40px;
+    font-size: 22px;
+    padding: 15px;
+  }
+  
+  .texto-descripcion {
+    font-size: 22px;
+    margin: 30px auto;
+  }
+  
+  .textoinferior {
+    font-size: 1.375rem;
+  }
+  
+  .textos-footer {
+    font-size: 26px;
+  }
+}
 
-
-
-
-
-
-
-
+/* Tablets pequeñas (hasta 768px) */
 @media (max-width: 768px) {
+  .header-custom {
+    height: 200px;
+  }
+  
+  .logo-header {
+    max-height: 200px;
+  }
+  
+  .textos-header {
+    font-size: 18px;
+  }
+  
+  .texto-1 {
+    font-size: 16px;
+  }
+  
+  .texto-2 {
+    font-size: 14px;
+  }
+  
+  /* Navegación móvil */
+  .nav {
+    gap: 15px;
+    padding: 10px;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .nav1 {
+    padding: 8px 12px;
+    display: inline-block;
+  }
+  
+  /* Slider más pequeño en móvil */
+  #slider-vo img {
+    height: 30vh;
+  }
+  
+  #slider-vo .carousel-caption {
+    padding: 10px;
+  }
+  
+  #slider-vo h5 {
+    font-size: 1.2rem;
+  }
+  
+  #slider-vo p {
+    font-size: 0.9rem;
+  }
+  
+  /* Texto descripción */
+  .texto-descripcion {
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  /* Cuadros de productos */
+  #cuadros .cuadro {
+    max-width: 100%;
+  }
+  
+  #cuadros .cuadro .texto {
+    font-size: 1rem;
+    bottom: 8px;
+  }
+  
+  /* Texto inferior */
+  .textoinferior {
+    font-size: 1.125rem;
+    padding: 15px 10px;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px 10px;
+  }
+  
+  .textos-footer {
+    font-size: 20px;
+  }
+  
+  .icons a {
+    font-size: 1.5rem;
+    margin: 0 8px;
+  }
+  
+  .footerdescuento {
+    width: 100%;
+  }
+  
+  .form-control1 {
+    max-width: 100%;
+  }
+  
+  /* Cards */
   .card-img-top {
     height: 300px;
+  }
+}
+
+/* Móviles (hasta 576px) */
+@media (max-width: 576px) {
+  .header-custom {
+    height: 150px;
+  }
+  
+  .logo-header {
+    max-height: 150px;
+  }
+  
+  .textos-header {
+    font-size: 14px;
+  }
+  
+  .texto-1 {
+    font-size: 13px;
+  }
+  
+  .texto-2 {
+    font-size: 11px;
+  }
+  
+  /* Navegación muy compacta */
+  .nav {
+    gap: 8px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .nav1 {
+    padding: 6px 10px;
+  }
+  
+  .nav1:hover {
+    padding: 6px 10px;
+  }
+  
+  /* Slider móvil pequeño */
+  #slider-vo img {
+    height: 25vh;
+  }
+  
+  #slider-vo .carousel-caption {
+    padding: 5px;
+  }
+  
+  #slider-vo h5 {
+    font-size: 1rem;
+  }
+  
+  #slider-vo p {
+    font-size: 0.8rem;
+  }
+  
+  /* Texto descripción móvil */
+  .texto-descripcion {
+    font-size: 16px;
+    margin: 15px auto;
+    padding: 0 10px;
+  }
+  
+  /* Cuadros productos móvil */
+  #cuadros .cuadro .texto {
+    font-size: 0.9rem;
+    bottom: 6px;
+    padding: 5px 10px;
+  }
+  
+  /* Texto inferior móvil */
+  .textoinferior {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  
+  .texto-corto {
+    padding: 8px;
+  }
+  
+  /* Footer móvil */
+  footer {
+    padding: 15px 5px;
+  }
+  
+  footer .row {
+    text-align: center;
+  }
+  
+  footer .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .textos-footer {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .icons a {
+    font-size: 1.3rem;
+    margin: 0 6px;
+  }
+  
+  .footerdescuento label {
+    font-size: 14px;
+  }
+  
+  .input-group {
+    margin-top: 10px;
+  }
+  
+  /* Cards móvil */
+  .card-img-top {
+    height: 250px;
+  }
+  
+  .card-body {
+    padding: 0.75rem;
+  }
+}
+
+/* Móviles muy pequeños (hasta 400px) */
+@media (max-width: 400px) {
+  .header-custom {
+    height: 120px;
+  }
+  
+  .logo-header {
+    max-height: 120px;
+  }
+  
+  .textos-header {
+    font-size: 12px;
+  }
+  
+  .nav {
+    font-size: 12px;
+    gap: 5px;
+  }
+  
+  #slider-vo img {
+    height: 20vh;
+  }
+  
+  .texto-descripcion {
+    font-size: 14px;
+  }
+  
+  .textoinferior {
+    font-size: 0.9rem;
+  }
+  
+  .card-img-top {
+    height: 200px;
   }
 }
