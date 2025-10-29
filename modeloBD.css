@@ -299,3 +299,7 @@ h2::after {
   border-radius: 2px;
   background: linear-gradient(90deg, #ff4fa3, #000000);
 }
+
+.pasos h2{
+  color: white !important;
+}
