@@ -1,0 +1,54 @@
+
+/* Estilos de las 3 cartas */
+/* Sección de Pasos */
+.pasos {
+  background-color: #eaf8ee; /* fondo verde muy suave */
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.pasos h2 {
+  color: #176a36;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.contenedor-pasos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.paso {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.paso h3 {
+  color: #12782c;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.paso p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+.infoDonCodigo {
+    color: black;
+}
