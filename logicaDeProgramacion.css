@@ -8,13 +8,6 @@
   border-radius: 10px;
 }
 
-.pasos h2 {
-  color: #176a36;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  font-weight: bold;
-}
-
 .contenedor-pasos {
   display: flex;
   justify-content: center;
