@@ -14,7 +14,6 @@ body{
   overflow-x: hidden;
 }
 
-/* ========== HEADER ========== */
 .header-custom {
   background: black;
   position: static;
@@ -36,7 +35,6 @@ body{
   font-size: 30px;
 }
 
-/* ========== NAVEGACIÓN ========== */
 .nav{
     text-decoration: none;
     background-color: black;
@@ -75,7 +73,6 @@ body{
   margin-top: 0;
 }
 
-/* ========== SLIDER ========== */
 #slider-vo{
   background-color: #000;
 }
@@ -96,7 +93,6 @@ body{
   font-family: "Lora";
 }
 
-/* ========== TEXTO DESCRIPCIÓN ========== */
 .texto-descripcion {
   max-width: 80rem; 
   margin: 40px auto; 
@@ -108,7 +104,6 @@ body{
   padding: 0 20px;
 }
 
-/* ========== CUADROS DE PRODUCTOS ========== */
 .cuadro {
   aspect-ratio: 1 / 1;
   position: relative;
@@ -170,7 +165,6 @@ body{
   border-radius: 15px;
 }
 
-/* ========== TEXTO INFERIOR ========== */
 .textoinferior{
   padding: 20px 10px;
   font-size: 1.5625rem;
@@ -183,7 +177,6 @@ body{
   padding: 10px;
 }
 
-/* ========== FOOTER ========== */
 footer{
     background-color: #000;
     color: #fff;
@@ -227,7 +220,6 @@ footer{
   color: #000;
 }
 
-/* ========== CARDS ========== */
 .card img {
   object-fit: cover;
 }
@@ -251,11 +243,7 @@ footer{
   width: 100%;         
 }
 
-/* ========================================== */
-/* ========== MEDIA QUERIES RESPONSIVE ===== */
-/* ========================================== */
 
-/* Tablets y pantallas medianas (hasta 992px) */
 @media (max-width: 992px) {
   .header-custom {
     height: 250px;
@@ -289,7 +277,6 @@ footer{
   }
 }
 
-/* Tablets pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   .header-custom {
     height: 200px;
@@ -311,7 +298,6 @@ footer{
     font-size: 14px;
   }
   
-  /* Navegación móvil */
   .nav {
     gap: 15px;
     padding: 10px;
@@ -324,7 +310,6 @@ footer{
     display: inline-block;
   }
   
-  /* Slider más pequeño en móvil */
   #slider-vo img {
     height: 30vh;
   }
@@ -341,14 +326,12 @@ footer{
     font-size: 0.9rem;
   }
   
-  /* Texto descripción */
   .texto-descripcion {
     font-size: 18px;
     margin: 20px auto;
     padding: 0 15px;
   }
   
-  /* Cuadros de productos */
   #cuadros .cuadro {
     max-width: 100%;
   }
@@ -358,13 +341,11 @@ footer{
     bottom: 8px;
   }
   
-  /* Texto inferior */
   .textoinferior {
     font-size: 1.125rem;
     padding: 15px 10px;
   }
   
-  /* Footer */
   footer {
     padding: 20px 10px;
   }
@@ -386,13 +367,11 @@ footer{
     max-width: 100%;
   }
   
-  /* Cards */
   .card-img-top {
     height: 300px;
   }
 }
 
-/* Móviles (hasta 576px) */
 @media (max-width: 576px) {
   .header-custom {
     height: 150px;
@@ -414,7 +393,6 @@ footer{
     font-size: 11px;
   }
   
-  /* Navegación muy compacta */
   .nav {
     gap: 8px;
     padding: 8px;
@@ -429,7 +407,6 @@ footer{
     padding: 6px 10px;
   }
   
-  /* Slider móvil pequeño */
   #slider-vo img {
     height: 25vh;
   }
@@ -446,21 +423,18 @@ footer{
     font-size: 0.8rem;
   }
   
-  /* Texto descripción móvil */
   .texto-descripcion {
     font-size: 16px;
     margin: 15px auto;
     padding: 0 10px;
   }
   
-  /* Cuadros productos móvil */
   #cuadros .cuadro .texto {
     font-size: 0.9rem;
     bottom: 6px;
     padding: 5px 10px;
   }
   
-  /* Texto inferior móvil */
   .textoinferior {
     font-size: 1rem;
     padding: 10px;
@@ -470,7 +444,6 @@ footer{
     padding: 8px;
   }
   
-  /* Footer móvil */
   footer {
     padding: 15px 5px;
   }
@@ -503,7 +476,6 @@ footer{
     margin-top: 10px;
   }
   
-  /* Cards móvil */
   .card-img-top {
     height: 250px;
   }
@@ -513,7 +485,7 @@ footer{
   }
 }
 
-/* Móviles muy pequeños (hasta 400px) */
+
 @media (max-width: 400px) {
   .header-custom {
     height: 120px;
