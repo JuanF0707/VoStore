@@ -1,0 +1,9 @@
+#body-integrantes{
+    background-color: black;
+}
+
+.card.mb-3 img {
+  height: 400px;
+  object-fit: cover;
+}
+
