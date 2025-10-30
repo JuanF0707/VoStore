@@ -368,7 +368,19 @@ footer{
   }
   
   .card-img-top {
-    height: 300px;
+    height: 350px;
+  }
+  .card-body {
+    padding: 0.875rem 1rem;
+  }
+  
+  .card-body h6 {
+    font-size: 1rem;
+  }
+  
+  #tallas {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
   }
 }
 
@@ -476,12 +488,29 @@ footer{
     margin-top: 10px;
   }
   
-  .card-img-top {
-    height: 250px;
+  .container.mt-4 {
+    padding: 0 10px;  
   }
   
-  .card-body {
-    padding: 0.75rem;
+  .card-img-top {
+    height: 280px;  
+  }
+  
+  .card-body h6 {
+    font-size: 0.95rem;
+  }
+  
+  .card-body .text-muted {
+    font-size: 0.8rem;
+  }
+  
+  #tallas {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .card-footer p {
+    font-size: 1rem;
   }
 }
 
@@ -516,7 +545,20 @@ footer{
     font-size: 0.9rem;
   }
   
-  .card-img-top {
-    height: 200px;
+   .card-img-top {
+    height: 220px; 
+  }
+  
+  .card-body h6 {
+    font-size: 0.85rem;
+  }
+  
+  #tallas {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+  }
+  
+  .card-footer p {
+    font-size: 0.9rem;
   }
 }
