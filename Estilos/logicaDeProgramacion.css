@@ -2,10 +2,11 @@
 /* Estilos de las 3 cartas */
 /* Sección de Pasos */
 .pasos {
-  background-color: #eaf8ee; /* fondo verde muy suave */
+  background-color: #000; /* fondo verde muy suave */
   text-align: center;
   padding: 50px 20px;
   border-radius: 10px;
+  color: #fff;
 }
 
 .contenedor-pasos {
@@ -41,7 +42,17 @@
   line-height: 1.5;
 }
 
+.titulopaso{
+  color: #000;
+}
+
 
 .infoDonCodigo {
     color: black;
+}
+
+.codigologica{
+  padding: 20px;
+  background: #000;
+  color: #fff;
 }

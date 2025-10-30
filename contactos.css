@@ -12,11 +12,12 @@ body {
   border: 2px solid #000;
   border-radius: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
 }
 
 .contact-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(255, 0, 102, 0.3);
+  box-shadow: 0 4px 12px rgba(228, 167, 157, 0.5);
 }
 
 .icon-circle {
@@ -33,9 +34,214 @@ body {
 .btn-dark {
   background-color: #000;
   border: none;
+  transition: background-color 0.3s ease;
 }
 
 .btn-dark:hover {
-  background-color: #e4a79d;
-  color: white;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.container.py-5 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.container.py-5 > p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .container.py-5 h2 {
+    font-size: 2.2rem;
+  }
+  
+  .container.py-5 > p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-card {
+    padding: 1.25rem;
+  }
+  
+  .icon-circle {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .icon-circle i {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container.py-5 {
+    padding: 3rem 1rem;
+  }
+  
+  .container.py-5 h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .container.py-5 > p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .row.g-4 {
+    row-gap: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .icon-circle i {
+    font-size: 1.3rem;
+  }
+  
+  .contact-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .contact-card p {
+    font-size: 0.95rem;
+  }
+  
+  .btn-dark {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .text-center.mt-5 {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container.py-5 {
+    padding: 2rem 0.75rem;
+  }
+  
+  .container.py-5 h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container.py-5 > p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .row.g-4 {
+    row-gap: 1.25rem;
+  }
+  
+  .col-md-4 {
+    padding: 0 0.75rem;
+  }
+  
+  .contact-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.875rem;
+  }
+  
+  .icon-circle i {
+    font-size: 1.2rem;
+  }
+  
+  .contact-card h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-card p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  
+  .btn-dark {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+  
+  .text-center.mt-5 {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .text-center.mt-5 p {
+    font-size: 0.875rem;
+  }
+  
+  .text-center.mt-5 a {
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container.py-5 {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .container.py-5 h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container.py-5 > p {
+    font-size: 0.9rem;
+  }
+  
+  .col-md-4 {
+    padding: 0 0.5rem;
+  }
+  
+  .contact-card {
+    padding: 1rem;
+  }
+  
+  .icon-circle {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon-circle i {
+    font-size: 1.1rem;
+  }
+  
+  .contact-card h5 {
+    font-size: 0.95rem;
+  }
+  
+  .contact-card p {
+    font-size: 0.8rem;
+  }
+  
+  .btn-dark {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .text-center.mt-5 p {
+    font-size: 0.8rem;
+  }
 }
