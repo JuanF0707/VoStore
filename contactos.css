@@ -1,0 +1,41 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.text-pink {
+  color: #e4a79d;
+}
+
+.contact-card {
+  background-color: #e4a79d;
+  border: 2px solid #000;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(255, 0, 102, 0.3);
+}
+
+.icon-circle {
+  background-color: #000000;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark {
+  background-color: #000;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #e4a79d;
+  color: white;
+}
