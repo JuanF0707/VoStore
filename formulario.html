@@ -98,9 +98,13 @@
                     Productos
                     </a>
                     <ul class="dropdown-menu bg-black">
-                        <li><a class="dropdown-item text-white" href="#">Ropa</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Accesorios</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Promociones</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/jeans.html">Jeans</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/depostivos.html">Deportivos</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/chaquetas.html">Chaquetas</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/bodys.html">Bodys</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/vestidos.html">Vestidos</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/sets.html">Set's</a></li>
+                        <li><a class="dropdown-item text-white" href="Productos/accesorios.html">Accesorios</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -120,60 +124,109 @@
                 </li>
         </ul>
         <br>
-        <h1>Registro de producto</h1>
         <!-- Formulario -->
-        <div class="contenedor-formulario">
-                <img src="img/VO STORE LOGO  SIN FONDO.png" alt="Logo de la empresa" class="logo">
+        <h1>Registro de producto</h1>
 
-            <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="email@gmail.com">
-                    </div>
+<!-- Formulario -->
+<div class="contenedor-formulario">
+    <img src="img/VO STORE LOGO  SIN FONDO.png" alt="Logo de la empresa" class="logo">
 
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="Escriba su nombre aquí...">
-                    </div>
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="email@gmail.com">
+        </div>
 
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="calle...">
-                    </div>
-                        <label for="lnom">Nombre del producto:</label>
-                        <input type="text" name="Nombre" id="lnom" placeholder="Escriba el nombre del producto">
-                        <br>
-                        <br>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione la talla</option>
-                            <option value="1">XS</option>
-                            <option value="2">S</option>
-                            <option value="3">M</option>
-                            <option value="4">L</option>
-                            <option value="5">XL</option>
-                        </select>
-                        <br>
-                        <div class="mb-3">
-                            <label for="validationTextarea" class="form-label"><b>Descripción del producto</b></label>
-                            <textarea class="form-control" id="validationTextarea" placeholder="Describa el producto" required></textarea>
-                        </div>
-                        <label for="precio_compra">Precio Compra:</label>
-                        <input type="number" id="precio_compra" name="precio_compra" step="0.01">
-                        <br>
-                        <br>
-                        <label for="color">Color:</label>
-                        <input type="text" id="color" name="color" placeholder="Escriba el color aquí">
-                        <br>
-                        <br>
-                        <label for="id-stock">Stock</label>
-                        <input type="number" id="id-stock">
-                        <br>
-                        <br>
-                        <div class="botones">
-                            <input type="submit" value="Enviar formulario">
-                            <input type="reset" value="Reiniciar">
-                        </div>
-            </form>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Escriba su nombre aquí...">
+        </div>
+
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="calle...">
+        </div>
+
+        <label for="lnom">Nombre del producto:</label>
+        <input type="text" name="Nombre" id="lnom" placeholder="Escriba el nombre del producto">
+        <br><br>
+
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione la talla</option>
+            <option value="1">XS</option>
+            <option value="2">S</option>
+            <option value="3">M</option>
+            <option value="4">L</option>
+            <option value="5">XL</option>
+        </select>
+        <br>
+
+        <div class="mb-3">
+            <label class="form-label"><b>Descripción del producto</b></label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Describa el producto"></textarea>
+        </div>
+
+        <label for="precio_compra">Precio Compra:</label>
+        <input type="number" id="precio_compra" name="precio_compra" step="0.01">
+        <br><br>
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" placeholder="Escriba el color aquí">
+        <br><br>
+
+        <label for="id-stock">Stock</label>
+        <input type="number" id="id-stock">
+        <br><br>
+
+        <div class="botones">
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Reiniciar">
+        </div>
+    </form>
+    <br>
+</div>
+
+<!-- Tabla -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Productos Registrados</h2>
+
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Producto</th>
+                <th>Talla</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Color</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ejemplo de fila vacía -->
+            <tr>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>
+                    <button class="btn btn-warning btn-sm">Editar</button>
+                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+            
             <br>
         </div>
     <!-- Texto de abajo -->
